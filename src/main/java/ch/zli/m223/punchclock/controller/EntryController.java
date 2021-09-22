@@ -25,7 +25,19 @@ public class EntryController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Entry createEntry(@Valid @RequestBody Entry entry) {
+    public Entry createEntry(@Valid @RequestBody Entry entry) throws Exception {
         return entryService.createEntry(entry);
+    }
+
+    @PutMapping("/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public Entry updateEntry(@PathVariable Long id, @Valid @RequestBody Entry entry) {
+        return entryService.updateEntry(id, entry);
+    }
+
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public void deleteEntry(@PathVariable Long id) {
+        entryService.deleteEntry(id);
     }
 }
