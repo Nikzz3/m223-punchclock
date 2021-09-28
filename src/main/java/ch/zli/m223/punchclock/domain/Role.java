@@ -13,8 +13,9 @@ public class Role {
 
     private String name;
 
+    @JsonIgnoreProperties({"role", "entries"})
     @OneToMany(mappedBy = "role")
-    private List<ApplicationUser> appUsers;
+    private List<ApplicationUser> users;
 
     public Long getId() {
         return id;
@@ -28,10 +29,10 @@ public class Role {
     public void setName(String name) {
         this.name = name;
     }
-    public List<ApplicationUser> getAppUsers() {
-        return appUsers;
+    public List<ApplicationUser> getUsers() {
+        return users;
     }
-    public void setAppUsers(List<ApplicationUser> appUsers) {
-        this.appUsers = appUsers;
+    public void setUsers(List<ApplicationUser> users) {
+        this.users = users;
     }
 }

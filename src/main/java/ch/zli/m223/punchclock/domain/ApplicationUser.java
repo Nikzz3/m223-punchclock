@@ -3,6 +3,7 @@ package ch.zli.m223.punchclock.domain;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class ApplicationUser {
@@ -12,10 +13,14 @@ public class ApplicationUser {
     private String username;
     private String password;
 
-    @JsonIgnoreProperties("appUsers")
+    @JsonIgnoreProperties("users")
     @ManyToOne
     @JoinColumn(name = "role")
     private Role role;
+
+    @JsonIgnoreProperties({"user", "category"})
+    @OneToMany(mappedBy = "user")
+    private List<Entry> entries;
 
     public long getId() {
         return id;
@@ -41,4 +46,11 @@ public class ApplicationUser {
     public void setRole(Role role) {
         this.role = role;
     }
+    public List<Entry> getEntries() {
+        return entries;
+    }
+    public void setEntries(List<Entry> entries) {
+        this.entries = entries;
+    }
+
 }

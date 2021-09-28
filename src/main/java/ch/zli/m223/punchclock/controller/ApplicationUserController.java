@@ -34,6 +34,7 @@ public class ApplicationUserController {
     @PostMapping("/sign-up")
     public void signUp(@RequestBody ApplicationUser applicationUser) {
         applicationUser.setPassword(bCryptPasswordEncoder.encode(applicationUser.getPassword()));
+        // Needs to be here so the current code works.
         Optional<Role> role = roleService.findById(1L);
         if(role.isPresent()){
             applicationUser.setRole(role.get());

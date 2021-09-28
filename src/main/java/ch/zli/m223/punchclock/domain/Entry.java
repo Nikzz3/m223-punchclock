@@ -31,6 +31,11 @@ public class Entry {
     @JoinColumn(name = "category")
     private Category category;
 
+    @JsonIgnoreProperties({"entries", "role"})
+    @ManyToOne
+    @JoinColumn(name = "user")
+    private ApplicationUser user;
+
     public Long getId() {
         return id;
     }
@@ -54,5 +59,11 @@ public class Entry {
     }
     public void setCategory(Category category) {
         this.category = category;
+    }
+    public ApplicationUser getUser() {
+        return user;
+    }
+    public void setUser(ApplicationUser user) {
+        this.user = user;
     }
 }
