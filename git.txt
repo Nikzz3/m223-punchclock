@@ -1,0 +1,146 @@
+commit 94e63728d28f09616314606ecd8e9b048170d1fc
+Author: Nick Zimmermann <nick.zimmermann@bluewin.ch>
+Date:   Wed Sep 29 16:38:35 2021 +0200
+
+    updated readme
+
+commit cfcf6e56752d2fe1679aa9271e0bff7a387f9b39
+Author: Nick Zimmermann <nick.zimmermann@bluewin.ch>
+Date:   Wed Sep 29 16:32:21 2021 +0200
+
+    protected routes, updated controller and services, added final to properties
+
+commit 1b9f81abdbdc490cfdd15e78c799231b09d21470
+Author: Nick Zimmermann <nick.zimmermann@bluewin.ch>
+Date:   Wed Sep 29 09:01:53 2021 +0200
+
+    added admin check for protected routes
+
+commit 44bb24d19b5efba55c9e9a3c74b1e2fef84cdd71
+Author: Nick Zimmermann <nick.zimmermann@bluewin.ch>
+Date:   Tue Sep 28 20:52:06 2021 +0200
+
+    updated WebConfiguration to get the Bearer Token, added some JsonIgnores and added last relation
+
+commit 3fc5f3fee9f53f88627734d4e5c1cf46450db740
+Author: Nick Zimmermann <nick.zimmermann@bluewin.ch>
+Date:   Tue Sep 28 20:47:40 2021 +0200
+
+    updated sql dummy data
+
+commit 5eeeb15d563323361690e2f6305eccd299fa4d84
+Author: Nick Zimmermann <nick.zimmermann@bluewin.ch>
+Date:   Tue Sep 28 16:39:45 2021 +0200
+
+    add dummy data to sql file
+
+commit 5e270b6cd27b7178dbd2888806eab4df0c7dfe25
+Author: Nick Zimmermann <nick.zimmermann@bluewin.ch>
+Date:   Tue Sep 28 16:39:26 2021 +0200
+
+    added Category and relation to Entry
+
+commit d53f881e2cddf1805fb3a8cd19f911f8e4e031ba
+Author: Nick Zimmermann <nick.zimmermann@bluewin.ch>
+Date:   Tue Sep 28 15:07:39 2021 +0200
+
+    added Role and updated WebConfiguration
+
+commit c7d4d36a7df38ff2f28b24bad58fa424313773bf
+Author: Nick Zimmermann <nick.zimmermann@bluewin.ch>
+Date:   Tue Sep 28 10:51:32 2021 +0200
+
+    added JWT Authentification
+
+commit 6709dc074bbde3560ecf49a15bd3ac7476298d2d
+Author: Nick Zimmermann <nick.zimmermann@swisscom.com>
+Date:   Wed Sep 22 10:18:18 2021 +0200
+
+    add PUT and DELETE request
+
+commit 0403021a4f258634cc79c400e254ba828083497f
+Author: Robin <r+github@obin.ch>
+Date:   Thu Sep 3 15:08:47 2020 +0200
+
+    Add some semicolons
+
+commit 63a74d5813b65f364c107ef6d668755569aa0bb4
+Author: Robin <r+github@obin.ch>
+Date:   Thu Sep 3 14:50:24 2020 +0200
+
+    Enhance web configuration
+
+commit 11cee874b2508c49f66c533688e9fba0b26bc276
+Author: Robin <1105080+openscript@users.noreply.github.com>
+Date:   Thu Oct 31 14:08:57 2019 +0100
+
+    Add example client
+
+commit 65a0ff5012d44fed4f5dd0c26209702ae37cbb42
+Merge: 901ee3f d97232a
+Author: Robin <1105080+openscript@users.noreply.github.com>
+Date:   Thu Oct 31 08:42:21 2019 +0100
+
+    Merge pull request #3 from zlict/features/authentication
+    
+    Set JDK 11 as default sdk
+
+commit d97232ab90ab74ef558bea60bb0bf9014f178770
+Author: Robin <1105080+openscript@users.noreply.github.com>
+Date:   Wed Oct 30 12:58:18 2019 +0100
+
+    Set JDK 11 as default sdk
+
+commit 901ee3fc6ff95f19295f7f0f9a86a66a42cc8b96
+Merge: 7cbb42d 52287b2
+Author: Robin <1105080+openscript@users.noreply.github.com>
+Date:   Fri Sep 20 14:05:39 2019 +0200
+
+    Merge pull request #2 from zlict/features/authentication
+    
+    Expose headers
+
+commit 52287b202acaa85c1d04ed05f7b92be35609b2c4
+Author: Robin <1105080+openscript@users.noreply.github.com>
+Date:   Fri Sep 20 14:04:30 2019 +0200
+
+    Expose headers
+
+commit 7cbb42dc6527658ca10fd6bd2912141ed1831424
+Merge: 54ef77e acf06c4
+Author: Robin <1105080+openscript@users.noreply.github.com>
+Date:   Tue Sep 3 14:31:48 2019 +0200
+
+    Merge pull request #1 from zlict/improve-project
+    
+    Fix small bugs, remove spring-boot-starter-data-rest dependency
+
+commit acf06c4fcb0f69e7fd2eab73fc6e49dc37ff908f
+Author: Manuel Allenspach <manuel@riok.ch>
+Date:   Tue Sep 3 13:39:51 2019 +0200
+
+    Fix small bugs, remove spring-boot-starter-data-rest dependency
+
+commit 54ef77ebd52c0a0fe94eb647f587f505dd55e21b
+Author: Robin <1105080+openscript@users.noreply.github.com>
+Date:   Mon Sep 2 11:23:50 2019 +0200
+
+    Add serializer und deserializer for dates
+
+commit 6af25ec422a8580445867eb06cd942e9ddc83286
+Author: Robin <1105080+openscript@users.noreply.github.com>
+Date:   Sun Sep 1 19:42:03 2019 +0200
+
+    Scaffold application
+
+commit 8709cf461e7fe70e94c4cc8385307fb11189e609
+Author: Robin <1105080+openscript@users.noreply.github.com>
+Date:   Sun Sep 1 19:41:39 2019 +0200
+
+    Scaffold application
+
+commit de377d0065b5a311009f0500c68d3956fc84a478
+Author: Robin <1105080+openscript@users.noreply.github.com>
+Date:   Sun Sep 1 18:16:36 2019 +0200
+
+    Initial commit
