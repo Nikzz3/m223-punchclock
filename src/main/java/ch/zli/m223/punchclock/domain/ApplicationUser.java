@@ -14,12 +14,12 @@ public class ApplicationUser {
     private String password;
 
     @JsonIgnoreProperties("users")
-    @ManyToOne
+    @ManyToOne()
     @JoinColumn(name = "role")
     private Role role;
 
     @JsonIgnoreProperties({"user", "category"})
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<Entry> entries;
 
     public long getId() {

@@ -9,8 +9,8 @@ import java.util.List;
 
 @Service
 public class CategoryService {
-    private CategoryRepository categoryRepository;
-    private UserService userService;
+    private final CategoryRepository categoryRepository;
+    private final UserService userService;
 
     public CategoryService(CategoryRepository categoryRepository, UserService userService) {
         this.categoryRepository = categoryRepository;
