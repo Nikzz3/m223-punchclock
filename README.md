@@ -17,7 +17,7 @@ Zudem gibt es verschiedenen Rollen(Benutzer, Admin). Der Benutzer kann nur seine
 
 ## Beispieldaten
 Beim Start der Applikation werden Beispieldaten in die H2 Datenbank geladen. 
-Folgende Datensätze werden erstellt:
+Folgende Benutzer werden erstellt:
 - Adminrolle
   - Benutzername: admin, Passwort: password
 - Normale Rollen
