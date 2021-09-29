@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.security.Principal;
 import java.util.List;
 
 @RestController
@@ -27,20 +28,20 @@ public class CategoryController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Category createCategory(@Valid @RequestBody Category category) {
-        return categoryService.create(category);
+    public Category createCategory(@Valid @RequestBody Category category, Principal principal) throws Exception {
+        return categoryService.create(category, principal);
     }
 
     @DeleteMapping(value = "/{id}")
     @ResponseStatus(HttpStatus.ACCEPTED)
-    public void deleteCategory(@PathVariable Long id) {
-        categoryService.delete(id);
+    public void deleteCategory(@PathVariable Long id, Principal principal) throws Exception {
+        categoryService.delete(id, principal);
     }
 
     @PutMapping(value = "/{id}")
     @ResponseStatus(HttpStatus.ACCEPTED)
-    public Category updateCategory(@PathVariable Long id, @RequestBody Category category) {
+    public Category updateCategory(@PathVariable Long id, @RequestBody Category category, Principal principal) throws Exception {
         category.setId(id);
-        return categoryService.update(category);
+        return categoryService.update(category, principal);
     }
 }
